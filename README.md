@@ -1,6 +1,6 @@
 # ROADMAP GIT
  
- Esse é um guia básico do git com os principais comandos, documento feito com vários exemplos visuais. Usei o vs code com a linguagem DART mas os comandos GIT são os mesmos independente da linguagem. Sinta-se livre para sugerir ajustes.
+ Olá! Me chamo Janiele Justino e fiz esse roadmap com intuito de facilitar o seu entendimento sobre o GIT. Nesse guia você verá os principais comandos, com auxílio de vários exemplos visuais. Usei o vs code com a linguagem DART mas os comandos GIT são os mesmos independente da linguagem. Sinta-se livre para sugerir ajustes. Bons estudos!
  
  <p align="left">
   <a href="https://www.linkedin.com/in/desenvolvedorajanielejustino/" alt="Linkedin">
@@ -13,6 +13,8 @@ Partindo do pressuposto que você sabe criar projetos na IDE e tem o GIT instala
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/110784724/194966258-0705ef25-aaf0-458b-999e-ec4a380d1f27.PNG" width="200px" />
+</div>
+<div align="center">
  <img src="https://user-images.githubusercontent.com/110784724/194966081-19a677e7-4813-4466-a0a3-f4129438b7cc.PNG" width="350px" height= "200xp" />
   <img src="https://user-images.githubusercontent.com/110784724/194966394-0331170f-0641-4711-b83c-5604380b0f1c.PNG" width="350px" height= "200xp" />
 </div>
@@ -34,7 +36,7 @@ O retorno do comando **ls** foi:
 </div>
 
 
-**Diretório: D:\Tutoriais** -> informa que estou na pasta Tutoriais
+**Diretório: D:\Tutoriais** -> informa que estou na pasta Tutoriais  
 **Length Name** ->informa a lista de pastas existentes dentro de Tutoriais
 
 Lembra que meu projeto se chama **basicogit** ? Então, para entrar na pasta correta, uso os seguintes comandos:
@@ -50,7 +52,7 @@ Agora podemos ver o nome da pasta adicionado ao diretório. Mas também podemos 
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/110784724/195093046-5015aa22-4002-43d7-99be-202566d0a936.PNG" width="500px" height= "300xp"/>
-</div>
+</div>  
 <div align="center">Primeiro passo concluído!</div>
 
 ## Iniciar repositório
@@ -74,7 +76,7 @@ CLIQUE ENTER
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/110784724/195098423-a2abd6a1-41ee-4071-93f2-deb0ddd2e8e5.png" width="600px" height= "45xp"/>
-</div>
+</div>  
 <div align="center"> Não é esperado algum retorno. </div>  
 
 DIGITE: **git config –global user.email “SEU EMAIL”**  
@@ -83,7 +85,7 @@ CLIQUE ENTER
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/110784724/195099714-74717357-7249-40f3-b6b5-4074f2edfffb.png" width="600px" height= "45xp"/>
-</div>
+</div>  
 <div align="center"> Não é esperado algum retorno. </div>  
 
 Para verificar se a configuração foi realizada com sucesso, use os mesmos comandos mas dessa vez sem passar informações de nome ou e-mail:
@@ -101,7 +103,8 @@ CLIQUE ENTER
 <div align="center">
 <img src="https://user-images.githubusercontent.com/110784724/195102117-9b0cf4a9-d2b4-4911-8bfa-eef4708766f4.png" width="500px" height= "50xp"/>
 </div>
-**Obs: talvez não seja possível ver direito mas antes do nome global existem dois hifens -**
+
+**Obs: Talvez não seja possível ver direito mas antes do nome global existem dois hifens.**  
 
 ## Ambiente de preparo
 O GIT possui diversos ambientes onde podemos salvar o estado de um arquivo, isso significa que você pode salvar cada alteração realizada no projeto, para poder voltar a algum estado específico sem ter que excluir as alterações e refazer o código até o ponto onde queria deixá-lo.
@@ -165,7 +168,7 @@ CLIQUE ENTER
 </div>
 <div align="center">
 <img src="https://user-images.githubusercontent.com/110784724/195119250-648f03ed-ee3e-4cef-85f2-84af9f74c0e7.png" width="300px" height= "80xp"/>
-</div>
+</div>  
 <div align="center">O retorno agora informa “main”. Essa não é uma alteração que precisa de commit.</div>
 
 ## Verificar commits realizados 
@@ -193,12 +196,12 @@ Novamente, veja a importância de lembrar de salvar as alterações localmente a
                                                                                                                                                
 <div align="center">
 <img src="https://user-images.githubusercontent.com/110784724/195124768-73005a5d-725a-4ec0-b7e3-ad37a306f718.png" width="700px" height= "300xp"/>
-</div>
+</div>  
                                                                                                                                                
 OBSERVE OS COMANDOS INDICADOS NAS LINHAS QUE COMEÇAM COM **PS**:
 <div align="center">
 <img src="https://user-images.githubusercontent.com/110784724/195126298-11e832fa-2183-48b3-8b64-78d90247027f.png" width="700px" height= "400xp"/>
-</div>
+</div>  
                                                                                                                                                
 Salvei a alteração no **arquivo_um.dart**  
 **git status**  para verificar as alterações disponíveis para o standing  
@@ -211,7 +214,7 @@ E abaixo o print com o resultado do:
 **git restore NOME DO ARQUIVO** para desfazer as alterações no arquivo:
 <div align="center">
 <img src="https://user-images.githubusercontent.com/110784724/195127729-7e794bd6-7968-4160-b86f-1eddf24114b8.png" width="700px" height= "400xp"/>
-</div>                                                                                                                                              
+</div>                                                                                                                                            
 <div align ="center"> Perceba que o print que eu tinha adicionado na classe foi retirado!</div>  
 
 Obs:  o comando **git restore –stage NOME DO ARQUIVO** também pode ser substituído por **git reset HEAD NOME DO ARQUIVO** trazendo o mesmo resultado que é retirar do standing.                                                                                                                                               
@@ -226,8 +229,6 @@ Obs:  o comando **git restore –stage NOME DO ARQUIVO** também pode ser substi
 </div> 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/110784724/195131449-f6f5313b-4b4c-4a55-9d2f-7457e71821a8.png" width="500px" height= "200xp"/>
-</div>
-<div align="center">
 <img src="https://user-images.githubusercontent.com/110784724/195132537-89409f25-b8a2-42a8-88c3-f7d612047798.png" width="300px" height= "200xp"/>
 </div>
 
@@ -237,3 +238,197 @@ Também podemos checar isso, realizando o **git status**:
 <div align="center">
 <img src="https://user-images.githubusercontent.com/110784724/195148055-3035b78d-6409-431d-a9bb-8af0a16014c4.png" width="600px" height= "200xp"/>
 </div>                                                                                            
+
+**git add/rm** têm a mesma finalidade, levar a alteração ao standing. O **add** significa adicionar a remoção e o **rm** significa remover.
+o **git restore** como já vimos antes permite restaurar o arquivo, veja:
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/110784724/195193031-46b0732e-b876-4147-87de-5a7b87e52532.png" width="700px" height= "300xp"/>
+</div>
+
+Mas vamos seguir com a deleção...
+<div align="center">
+<img src="https://user-images.githubusercontent.com/110784724/195194412-592357e0-86d4-4fd2-9e0b-6c938033f703.png" width="800px" height= "400xp"/>
+</div>  
+
+Viu como o retorno é igual a quando colocamos **git add** para adicionar ao standing?  
+Agora é só usar os comando já vistos:  
+**git commit -m “texto descritivo”** para deletar de vez  
+**git restore –stage NOME DO ARQUIVO** ou  **git reset HEAD NOME DO ARQUIVO** para tirar do standing  
+**git restore NOME DO ARQUIVO** para desistir da deleção  
+
+## Gerenciar logs(registros de commits) 
+
+Vou criar um novo commit, você lembra como faz? No arquivo desejado, realize a alteração e salve-a localmente. Em seguida use os comandos já vistos:
+
+**git status**  
+**git add NOME DO ARQUIVO**  
+**git commit -m “Texto descritivo”**  
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/110784724/195196459-52f47d21-f6b3-4b0b-968a-f1820c43139b.png" width="800px" height= "400xp"/>
+</div>
+
+Agora tenho dois commits:
+<div align="center">
+<img src="https://user-images.githubusercontent.com/110784724/195198300-82040370-0cad-4d91-bc09-f04ba9a09d83.png" width="700px" height= "300xp"/>
+</div>
+
+Os commits são identificados pelo texto descritivo e pelo hash.  
+Você pode usar o hash para trazer o commit do log para o ambiente de trabalho.  
+
+Vou usar o hash do primeiro commit, observe a mudança na tela:  
+DIGITE: **git checkout HASH**  
+CLIQUE ENTER
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/110784724/195199877-5439a608-2480-493b-b5b4-2c9173751b92.png" width="600px" height= "500xp"/>
+</div>
+
+Nesse modo você pode fazer alterações, commits, cancelar commits mas nada ficará salvo. Se você quiser realmente salvar alguma alteração, deverá criar um novo ramo a partir da branch main.
+
+A partir do momento em que você entra em um estado, é como se fosse um mundo alternativo em que você pode fazer qualquer coisa que não vai alterar o estado da main. Por exemplo, se você realizar um **git log** verá que ele só mostra os próprios commits:
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/110784724/195202509-bd6ee14e-5199-4116-850e-a659a76b0fe4.png" width="600px" height= "500xp"/>
+</div>
+
+Veja esse exemplo em que eu fiz outros commits dentro desse “mundo paralelo”:
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/110784724/195203524-9e8b3893-1b8c-40af-8a23-a9da56745686.png" width="600px" height= "500xp"/>
+</div>
+
+E se você quiser sair desse estado e ir para a branch main? Simples, siga os seguintes passos:  
+
+DIGITE:  **git branch**  
+CLIQUE ENTER
+
+O retorno será a lista de branchs, a que estiver marcada em verde é a branch que você está!
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/110784724/195203964-75838544-00a2-42ea-a600-e51f40966712.png" width="300px" height= "100xp"/>
+</div>
+
+Para sair, faça a mudança para a branch principal, a main.  
+DIGITE: **git checkout main**  
+CLIQUE ENTER
+
+O retorno será uma informação:
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/110784724/195204365-0b0af108-270d-4e5d-a1a2-ae2cd090118d.png" width="600px" height= "250xp"/>
+</div>
+
+Pronto, você já está na branch main e o retorno diz que você tem dois commits não associados a branch, que estão sendo deixados para trás mas se você quiser mantê-los, pode criar um novo ramo usando o comando **git branch NOME DA NOVA BRANCH 4fcff8a**  mas caso não queira, continue seu trabalho.
+
+**Esse código é específico do meu exemplo e não um padrão de comando, e só irá aparecer um código para criar uma branch nesse tipo de ocasião.**
+
+Verificando os logs da branch main:
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/110784724/195205080-771caccb-1db8-439c-b862-7e13e96e2afe.png" width="600px" height= "500xp"/>
+</div>
+
+## Controle de estados com ramos(novas branches)
+
+A partir da branch principal podemos criar um novo ramo com o seguinte comando:  
+
+DIGITE: **git branch NOME DO NOVO BRANCH**  
+CLIQUE ENTER
+
+Não é esperado algum retorno.
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/110784724/195205847-05b166ed-0eed-4f9f-ae33-97b67b4b969d.png" width="450px" height= "100xp"/>
+</div>
+
+Verificar branches existentes:  
+DIGITE: **git branch**   
+CLIQUE ENTER
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/110784724/195206723-03d4ab9e-68a7-42fb-85fc-e15eeae5690e.png" width="450px" height= "100xp"/>
+</div>
+
+Mudar de branch:  
+DIGITE: **git checkout NOME DA BRANCH**  
+CLIQUE ENTER
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/110784724/195207195-f488989b-e734-415c-ab67-ee663acfd476.png" width="500px" height= "200xp"/>
+</div>
+
+Essa branch é como um clone da branch main, você só vai acrescentar informações a partir do que já existia, veja:
+
+**Como a branch desenvolvimento foi criada:**
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/110784724/195207637-87f28a5c-90b1-4ba5-b3c2-72f2aaa905eb.png" width="600px" height= "300xp"/>
+</div>  
+
+**Branch desenvolvimento alterada:**
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/110784724/195209147-b445c1d0-6c17-41b8-9658-380d7e242f75.png" width="600px" height= "500xp"/>
+</div>
+
+Digamos que você gostou do resultado e quer implementar na branch main, faça um **MERGE!**
+
+## Merge  
+
+É basicamente a união das duas branches.
+O merge só é possível a partir do main, então faça o checkout do branch como já te ensinei e em seguida use os comandos:
+
+DIGITE: **git merge desenvolvimento**  
+CLIQUE ENTER
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/110784724/195209758-e8ef1d9a-ae2d-4490-a824-9ff7b40dd481.png" width="600px" height= "500xp"/>
+</div>
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/110784724/195210116-e7a214a4-4c98-4208-8a91-76a61953505a.png" width="600px" height= "500xp"/>
+</div>
+
+## Alterar o nome de alguma branch existente
+
+Você pode fazer isso a partir de qualquer branch:  
+
+DIGITE: **git branch -m NomeAtual NomeNovo**  
+CLIQUE ENTER
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/110784724/195211097-c4da3c9a-ddba-43ca-bb0e-132d7530c783.png" width="600px" height= "500xp"/>
+</div>
+
+## Deletar branch
+
+Quer deletar uma branch que não será mais usada após o merge?
+
+DIGITE: **git branch -D NOME DA BRANCH**  
+CLIQUE ENTER
+
+Você deve fazer isso a partir da branch principal, pois após deletar qualquer branch você permanecerá na main, se você estiver dentro da branch que quer deletar o retorno será um erro, veja:
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/110784724/195211863-ed7dc33e-4d8c-42a7-887e-1b42da2f2d86.png" width="600px" height= "100xp"/>
+</div>
+
+Seguindo os passos corretos:
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/110784724/195212411-12a46a6b-a7e7-4e89-9291-5167610783b2.png" width="600px" height= "250xp"/>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
