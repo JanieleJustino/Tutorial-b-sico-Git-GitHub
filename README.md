@@ -8,8 +8,57 @@
 </p> 
 
 
-Partindo do pressuposto que você sabe criar projetos na IDE e tem o GIT instalado. Vou dar exemplos usando um projeto com arquivos criados na lib, conforme imagens abaixo:
+Partindo do pressuposto que você sabe criar projetos na IDE e tem o GIT instalado, Iremos configurar seu ambiente GIT.  
+O GIT pode ser usado por vários usuários e por isso você precisa configurar seu ambiente com seu nome e e-mail para registros de commits!  
+**Vou te falar sobre duas formas de configurar o GIT: configurar globalmente e configurar localmente.**  
 
+Após instalar o GIT na sua máquina própria, você pode **configurar globalmente**, ou seja, informar que por default todos os seus repositórios terão a assinatura X. Essa configuração só precisa ser feita uma única vez, salvo se você desinstalar o git.
+
+**Obs: Essa configuração não determina a conexão com repositório online.**
+
+Para configurar seu ambiente **GIT global**, use os comandos:  
+
+DIGITE: **git config --global user.name “SEU NOME”**  
+CLIQUE ENTER
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/110784724/195098423-a2abd6a1-41ee-4071-93f2-deb0ddd2e8e5.png" width="600px" height= "45xp"/>
+</div>  
+<div align="center"> Não é esperado algum retorno. </div>  
+
+DIGITE: **git config --global user.email “SEU EMAIL”**  
+LEMBRE DE USAR O EMAIL CADASTRADO NO SEU GIT  
+CLIQUE ENTER
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/110784724/195099714-74717357-7249-40f3-b6b5-4074f2edfffb.png" width="600px" height= "45xp"/>
+</div>  
+<div align="center"> Não é esperado algum retorno. </div>  
+
+**Obs: Para verificar se a configuração foi realizada com sucesso, use os mesmos comandos mas dessa vez sem passar informações de nome ou e-mail:**
+
+DIGITE: **git config --global user.name**  
+CLIQUE ENTER
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/110784724/195101531-f2eac6d5-51c1-4a40-ae72-16a77889df1d.png" width="500px" height= "100xp"/>
+</div>
+
+DIGITE: **git config --global user.email**  
+CLIQUE ENTER
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/110784724/195102117-9b0cf4a9-d2b4-4911-8bfa-eef4708766f4.png" width="500px" height= "50xp"/>
+</div> 
+
+Veja abaixo um exemplo, onde inicializei o repositório, sem realizar uma configuração GIT local e por default meu commit ficou com minha assinatura global:
+**Obs: Não se preocupe, os comandos utilizados ainda serão vistos nesse roadmap, esse print serve apenas para testificar o default do global.**
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/110784724/195622915-947e731e-7d41-444d-8e1e-a29289c1d188.png" width="800px" height= "300xp"/>
+</div>
+
+<div align="center"> Nesse roadmap vou dar exemplos usando um projeto com arquivos criados na lib, conforme imagens abaixo:</div>
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/110784724/194966258-0705ef25-aaf0-458b-999e-ec4a380d1f27.PNG" width="200px" />
@@ -17,8 +66,7 @@ Partindo do pressuposto que você sabe criar projetos na IDE e tem o GIT instala
 <div align="center">
  <img src="https://user-images.githubusercontent.com/110784724/194966081-19a677e7-4813-4466-a0a3-f4129438b7cc.PNG" width="350px" height= "200xp" />
   <img src="https://user-images.githubusercontent.com/110784724/194966394-0331170f-0641-4711-b83c-5604380b0f1c.PNG" width="350px" height= "200xp" />
-</div>
-
+</div>  
 
 ## Controle de versão
 
@@ -33,22 +81,21 @@ O retorno do comando **ls** foi:
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/110784724/194969707-744b4de7-3434-42e5-b423-9aad2fb01df1.PNG" width="400px" height= "150xp"/>
-</div>
-
+</div>  
 
 **Diretório: D:\Tutoriais** -> informa que estou na pasta Tutoriais  
-**Length Name** ->informa a lista de pastas existentes dentro de Tutoriais
+**Length Name** ->informa a lista de pastas existentes dentro de Tutoriais  
 
-Lembra que meu projeto se chama **basicogit** ? Então, para entrar na pasta correta, uso os seguintes comandos:
+Lembra que meu projeto se chama **basicogit** ? Então, para entrar na pasta correta, uso os seguintes comandos:  
 
 DIGITE : **cd NOME DA PASTA**  
-CLIQUE ENTER
+CLIQUE ENTER  
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/110784724/195092031-8d13bfb3-ad4a-4b4f-93c0-3c84545058ef.PNG" width="300px" height= "80xp"/>
 </div>
 
-Agora podemos ver o nome da pasta adicionado ao diretório. Mas também podemos digitar um novo ls  para checar se agora estamos na pasta correta:
+Agora podemos ver o nome da pasta adicionado ao diretório. Mas também podemos digitar um novo ls  para checar se agora estamos na pasta correta:  
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/110784724/195093046-5015aa22-4002-43d7-99be-202566d0a936.PNG" width="500px" height= "300xp"/>
@@ -57,10 +104,10 @@ Agora podemos ver o nome da pasta adicionado ao diretório. Mas também podemos 
 
 ## Iniciar repositório
 
-O primeiro comando GIT que usamos é para iniciar um repositório local(na máquina).
+O primeiro comando GIT que usamos é para iniciar um repositório local(na máquina).  
 
 DIGITE: **git init**  
-CLIQUE ENTER
+CLIQUE ENTER  
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/110784724/195097101-54c415ee-d381-45a3-b95c-e9ce2c7ae76d.PNG" width="450px" height= "80xp"/>
@@ -68,43 +115,41 @@ CLIQUE ENTER
 
 O retorno do comando **git init** informa que foi iniciado um repositório e uma pasta chamada **.git** foi criada na pasta do projeto. Essa pasta fica oculta mas você pode torná-la visível. Nela, é onde podemos acompanhar as mudanças realizadas nos arquivos do projeto.
 
-## Configurar ambiente GIT
-O GIT pode ser usado por vários usuários e por isso você precisa configurar seu ambiente com seu nome e e-mail! Use os seguintes comandos: 
+## Configurar ambiente GIT  
+Ao iniciar um repositório, caso você precise usar uma assinatura diferente por exemplo o email da sua empresa, você deve configurar o GIT localmente. Isso irá alterar a assinatura do seu commit.  
 
-DIGITE: **git config –global user.name “SEU NOME”**  
-CLIQUE ENTER
+DIGITE: **git config user.name “SEU NOME”**   
+CLIQUE ENTER  
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/110784724/195098423-a2abd6a1-41ee-4071-93f2-deb0ddd2e8e5.png" width="600px" height= "45xp"/>
+<img src="https://user-images.githubusercontent.com/110784724/195611989-189e8554-cadd-4222-800a-da9a0736d78a.png" width="600px" height= "100xp"/>
 </div>  
 <div align="center"> Não é esperado algum retorno. </div>  
 
-DIGITE: **git config –global user.email “SEU EMAIL”**  
+DIGITE: **git config user.email “SEU EMAIL”**  
 LEMBRE DE USAR O EMAIL CADASTRADO NO SEU GIT  
-CLIQUE ENTER
+CLIQUE ENTER  
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/110784724/195099714-74717357-7249-40f3-b6b5-4074f2edfffb.png" width="600px" height= "45xp"/>
+<img src="https://user-images.githubusercontent.com/110784724/195629713-63385476-6776-4261-87d9-c6f69d8f97ff.png" width="600px" height= "90xp"/>
 </div>  
 <div align="center"> Não é esperado algum retorno. </div>  
 
 Para verificar se a configuração foi realizada com sucesso, use os mesmos comandos mas dessa vez sem passar informações de nome ou e-mail:
 
-DIGITE: **git config –global user.name**  
-CLIQUE ENTER
+DIGITE: **git config user.name**  
+CLIQUE ENTER  
+DIGITE: **git config user.email**  
+CLIQUE ENTER  
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/110784724/195101531-f2eac6d5-51c1-4a40-ae72-16a77889df1d.png" width="500px" height= "50xp"/>
-</div>
+<img src="https://user-images.githubusercontent.com/110784724/195612884-52c69f97-0e62-422f-957f-5b74dcc547a3.png" width="500px" height= "200xp"/>
+</div>  
 
-DIGITE: **git config –global user.email**  
-CLIQUE ENTER
+Você também pode verificar as configurações  (assinaturas) existentes, use os comandos:  
 
-<div align="center">
-<img src="https://user-images.githubusercontent.com/110784724/195102117-9b0cf4a9-d2b4-4911-8bfa-eef4708766f4.png" width="500px" height= "50xp"/>
-</div>
-
-**Obs: Talvez não seja possível ver direito mas antes do nome global existem dois hifens.**  
+DIGITE: **git config --list**  
+CLIQUE ENTER  
 
 ## Ambiente de preparo
 O GIT possui diversos ambientes onde podemos salvar o estado de um arquivo, isso significa que você pode salvar cada alteração realizada no projeto, para poder voltar a algum estado específico sem ter que excluir as alterações e refazer o código até o ponto onde queria deixá-lo.
@@ -357,7 +402,15 @@ CLIQUE ENTER
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/110784724/195207195-f488989b-e734-415c-ab67-ee663acfd476.png" width="500px" height= "200xp"/>
-</div>
+</div>  
+
+Criar uma branch a partir da atual e mudar para ela:  
+DIGITE: **git checkout -b NOME DA BRANCH**  
+CLIQUE ENTER  
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/110784724/195636713-05940e63-102d-4f03-bbb9-cb79102ef6ae.png" width="400px" height= "100xp"/>
+</div>  
 
 Essa branch é como um clone da branch main, você só vai acrescentar informações a partir do que já existia, veja:
 
